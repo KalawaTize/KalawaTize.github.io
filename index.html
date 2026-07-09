@@ -1,489 +1,233 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Claude Kalawa TIZE | Portfolio Cybersécurité</title>
-
-  <meta name="description" content="Portfolio cybersécurité de Claude Kalawa TIZE, candidat Analyste SOC junior, Technicien cybersécurité, Analyste sécurité réseau et Support TI orienté sécurité à Saint-Georges, Québec." />
-
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Kalawa Tize | Portfolio Cybersécurité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#06b6d4',
+                        dark: '#0f172a',
+                        darker: '#020617'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-grid {
+                background-size: 40px 40px;
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            }
+        }
+    </style>
 </head>
-
-<body>
-
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="#accueil" class="logo">
-        <span class="logo-icon">CKT</span>
-        <span>Claude Kalawa TIZE</span>
-      </a>
-
-      <ul class="nav-links">
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#formation">Formation</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- ACCUEIL -->
-    <section id="accueil" class="hero">
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content">
-        <p class="tag">Portfolio cybersécurité</p>
-
-        <h1>
-          Claude Kalawa TIZE
-        </h1>
-
-        <h2>
-          Analyste SOC junior | Technicien cybersécurité | Analyste sécurité réseau
-        </h2>
-
-        <p class="hero-text">
-          Diplômé en cybersécurité au Collège Cumberland, basé à Saint-Georges, Québec.
-          Je mets en valeur ici mes projets pratiques en sécurité réseau, tests de pénétration,
-          gestion des identités, analyse de vulnérabilités, SIEM, gestion des risques et développement sécurisé.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-          <a href="CV-Claude-Kalawa-Tize.pdf" class="btn btn-secondary" target="_blank">Télécharger mon CV</a>
-          <a href="#contact" class="btn btn-light">Me contacter</a>
-        </div>
-
-        <div class="hero-stats">
-          <div>
-            <strong>8+</strong>
-            <span>Projets pratiques</span>
-          </div>
-          <div>
-            <strong>SOC</strong>
-            <span>Détection & analyse</span>
-          </div>
-          <div>
-            <strong>Security+</strong>
-            <span>Certification en cours</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- A PROPOS -->
-    <section id="apropos" class="section">
-      <div class="section-header">
-        <p class="section-tag">Présentation</p>
-        <h2>À propos de moi</h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Je m’appelle <strong>Claude Kalawa TIZE</strong>, je suis basé à
-            <strong>Saint-Georges, Québec</strong>, et je viens de terminer ma formation en
-            cybersécurité au <strong>Collège Cumberland</strong>.
-          </p>
-
-          <p>
-            Durant ma formation, j’ai réalisé plusieurs projets concrets touchant différents domaines
-            de la cybersécurité : sécurité des réseaux, analyse de vulnérabilités, tests de pénétration,
-            SIEM avec Splunk, gestion des identités avec OpenAM, gestion des risques, développement
-            d’application en Python et gestion de projet Agile.
-          </p>
-
-          <p>
-            Je recherche une première opportunité professionnelle dans un rôle junior où je pourrai
-            continuer à développer mes compétences, contribuer à la protection des systèmes
-            informatiques et apporter une valeur concrète à une équipe TI ou cybersécurité.
-          </p>
-        </div>
-
-        <div class="profile-card">
-          <h3>Objectifs professionnels</h3>
-          <ul>
-            <li>Analyste SOC junior</li>
-            <li>Technicien cybersécurité</li>
-            <li>Analyste sécurité réseau</li>
-            <li>Support TI orienté sécurité</li>
-          </ul>
-
-          <div class="profile-info">
-            <p><strong>Localisation :</strong> Saint-Georges, Québec</p>
-            <p><strong>Formation :</strong> Cybersécurité - Collège Cumberland</p>
-            <p><strong>Certification :</strong> CompTIA Security+ en cours</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMPETENCES -->
-    <section id="competences" class="section section-dark">
-      <div class="section-header">
-        <p class="section-tag">Savoir-faire</p>
-        <h2>Compétences techniques</h2>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <h3>Sécurité offensive</h3>
-          <ul>
-            <li>Reconnaissance web et réseau</li>
-            <li>Scan de ports et énumération</li>
-            <li>Audit de sécurité web</li>
-            <li>Tests de pénétration en laboratoire</li>
-            <li>Exploitation contrôlée avec Metasploit</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3>Sécurité défensive</h3>
-          <ul>
-            <li>Détection d’attaque avec Splunk</li>
-            <li>Analyse de logs</li>
-            <li>Gestion des incidents</li>
-            <li>Surveillance SIEM</li>
-            <li>Analyse de vulnérabilités avec Nessus</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3>Réseaux & infrastructure</h3>
-          <ul>
-            <li>Configuration de pfSense</li>
-            <li>Firewall et règles de filtrage</li>
-            <li>Sécurité réseau d’entreprise</li>
-            <li>Segmentation réseau</li>
-            <li>Services réseau de base</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3>Gestion des identités</h3>
-          <ul>
-            <li>Mise en place de OpenAM</li>
-            <li>Gestion des accès</li>
-            <li>Authentification</li>
-            <li>Contrôle d’accès</li>
-            <li>Principes IAM</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3>Développement & méthode Agile</h3>
-          <ul>
-            <li>Python</li>
-            <li>Développement d’application</li>
-            <li>Sécurité des applications</li>
-            <li>Méthode Scrum Agile</li>
-            <li>Gestion de projet logiciel</li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3>Gestion & documentation</h3>
-          <ul>
-            <li>Gestion des risques</li>
-            <li>Programme de sécurité</li>
-            <li>Cahier des charges fonctionnel</li>
-            <li>Diagramme de Gantt</li>
-            <li>Planification de projet</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="tools-section">
-        <h3>Outils utilisés</h3>
-
-        <div class="tools-list">
-          <span>Kali Linux</span>
-          <span>Recon-ng</span>
-          <span>theHarvester</span>
-          <span>Shodan</span>
-          <span>Proxychains</span>
-          <span>Tor</span>
-          <span>Nmap</span>
-          <span>Subfinder</span>
-          <span>Dirb</span>
-          <span>WhatWeb</span>
-          <span>Burp Suite</span>
-          <span>DevTools</span>
-          <span>Nikto</span>
-          <span>Nuclei</span>
-          <span>PowerShell</span>
-          <span>OpenAM</span>
-          <span>Nessus</span>
-          <span>Metasploit</span>
-          <span>pfSense</span>
-          <span>Splunk SIEM</span>
-          <span>Python</span>
-          <span>Scrum Agile</span>
-          <span>Diagramme de Gantt</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJETS -->
-    <section id="projets" class="section">
-      <div class="section-header">
-        <p class="section-tag">Réalisations</p>
-        <h2>Mes projets en cybersécurité</h2>
-        <p>
-          Voici une sélection de projets réalisés dans le cadre de ma formation au Collège Cumberland.
-          Les environnements utilisés sont des environnements de laboratoire ou autorisés.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-
-        <!-- Projet 1 -->
-        <article class="project-card">
-          <div class="project-number">01</div>
-          <h3>Gestion des identités et des accès avec OpenAM</h3>
-
-          <p>
-            Mise en place d’une solution de gestion des identités et des accès avec OpenAM
-            afin de comprendre les principes IAM, l’authentification et le contrôle d’accès.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> GIA / IAM</p>
-            <p><strong>Outils :</strong> OpenAM</p>
-            <p><strong>Compétences :</strong> authentification, gestion des accès, contrôle d’identité</p>
-          </div>
-		  
-		  <a href="Projets/openam.html" class="project-link" target="_blank">Voir le projet détaillé</a>
-        </article>
-
-        <!-- Projet 2 -->
-        <article class="project-card">
-          <div class="project-number">02</div>
-          <h3>Scan de vulnérabilités avec Nessus et exploitation contrôlée</h3>
-
-          <p>
-            Réalisation d’un scan de vulnérabilités avec Nessus, analyse des résultats,
-            classification des risques et utilisation de Metasploit dans un environnement
-            de laboratoire afin de comprendre l’impact réel de certaines failles.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Sécurité de l’information</p>
-            <p><strong>Outils :</strong> Nessus, Metasploit, Kali Linux</p>
-            <p><strong>Compétences :</strong> analyse de vulnérabilités, exploitation en laboratoire, remédiation</p>
-          </div>
-		  <a href="Projets/nessus-metasploit.html" class="project-link">Voir le projet détaillé</a>
-        </article>
-
-        <!-- Projet 3 -->
-        <article class="project-card">
-          <div class="project-number">03</div>
-          <h3>Installation et configuration de pfSense dans un réseau d’entreprise</h3>
-
-          <p>
-            Mise en place d’un pare-feu pfSense dans une architecture réseau d’entreprise.
-            Configuration des règles de filtrage, sécurisation des flux réseau et contrôle
-            du trafic entrant et sortant.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Sécurité des réseaux</p>
-            <p><strong>Outils :</strong> pfSense</p>
-            <p><strong>Compétences :</strong> firewall, règles réseau, sécurité périmétrique, architecture réseau</p>
-          </div>
-		  <a href="Projets/pfsense.html" class="project-link">Voir le projet détaillé</a>
-        </article>
-
-        <!-- Projet 4 -->
-        <article class="project-card">
-          <div class="project-number">04</div>
-          <h3>Audit de sécurité web et test de pénétration</h3>
-
-          <p>
-            Réalisation d’un audit de sécurité web en utilisant une méthodologie de reconnaissance,
-            d’énumération et de test. Utilisation d’outils spécialisés pour identifier des services,
-            technologies, répertoires exposés et vulnérabilités potentielles.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Test de pénétration web</p>
-            <p><strong>Outils :</strong> Recon-ng, theHarvester, Shodan, Nmap, Subfinder, Dirb, WhatWeb, Burp Suite, Nikto, Nuclei</p>
-            <p><strong>Compétences :</strong> reconnaissance, analyse web, proxy, énumération, documentation technique</p>
-          </div>
-		  <a href="Projets/audit-web.html" class="project-link">Voir le projet détaillé</a>
-        </article>
-
-        <!-- Projet 5 -->
-        <article class="project-card featured">
-          <div class="project-number">05</div>
-          <h3>Système de réservation de billets en Python</h3>
-
-          <p>
-            Développement d’un système de réservation de billets avec Python. Le projet a été
-            réalisé en appliquant une approche Agile/Scrum pour la gestion du développement,
-            la planification et le suivi des tâches.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Développement logiciel et sécurité des applications</p>
-            <p><strong>Outils :</strong> Python, méthode Scrum Agile</p>
-            <p><strong>Compétences :</strong> développement, logique applicative, gestion de projet Agile</p>
-          </div>
-
-          <a class="project-link" href="https://github.com/KalawaTize/Booking_new.git" target="_blank">
-            Voir le projet sur GitHub
-          </a>
-        </article>
-
-        <!-- Projet 6 -->
-        <article class="project-card">
-          <div class="project-number">06</div>
-          <h3>Programme de sécurité pour la protection des actifs</h3>
-
-          <p>
-            Proposition d’un programme de sécurité visant à protéger les actifs d’une entreprise.
-            Identification des risques, des actifs critiques, des contrôles de sécurité et des mesures
-            de réduction des risques.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Gestion des risques</p>
-            <p><strong>Outils :</strong> analyse de risques, documentation, politiques de sécurité</p>
-            <p><strong>Compétences :</strong> gouvernance, analyse des risques, protection des actifs</p>
-          </div>
-		  <a href="Projets/gestion-risque.html" class="project-link">Voir le projet détaillé</a>
-        </article>
-
-        <!-- Projet 7 -->
-        <article class="project-card">
-          <div class="project-number">07</div>
-          <h3>Détection d’une attaque avec Splunk</h3>
-
-          <p>
-            Mise en place d’un environnement SIEM avec Splunk pour collecter, analyser et corréler
-            des événements de sécurité. Réalisation de tests afin de détecter des comportements suspects
-            et comprendre le processus d’investigation.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Garantie de sécurité, test et validation</p>
-            <p><strong>Outils :</strong> Splunk SIEM</p>
-            <p><strong>Compétences :</strong> détection, analyse de logs, investigation, surveillance SOC</p>
-          </div>
-		  <a href="Projets/splunk-detection.html" class="project-link">Voir le projet détaillé</a>
-        </article>
-
-        <!-- Projet 8 -->
-        <article class="project-card">
-          <div class="project-number">08</div>
-          <h3>HACKTHEPLANET - Organisation d’un événement technologique</h3>
-
-          <p>
-            Élaboration d’un cahier des charges fonctionnel et planification de l’organisation
-            d’un événement technologique pour le Collège Cumberland. Travail axé sur la gestion
-            de projet, la planification, les livrables et la coordination.
-          </p>
-
-          <div class="project-details">
-            <p><strong>Domaine :</strong> Gestion de projet</p>
-            <p><strong>Outils :</strong> cahier des charges, diagramme de Gantt, planification</p>
-            <p><strong>Compétences :</strong> organisation, documentation, planification, gestion des livrables</p>
-          </div>
-		  <a href="Projets/hacktheplanet.html" class="project-link">Voir le projet détaillé</a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- FORMATION -->
-    <section id="formation" class="section section-dark">
-      <div class="section-header">
-        <p class="section-tag">Parcours</p>
-        <h2>Formation et certification</h2>
-      </div>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Formation en cybersécurité - Collège Cumberland</h3>
-            <p>
-              Formation pratique couvrant la sécurité réseau, les tests de pénétration,
-              la gestion des identités, la sécurité de l’information, la gestion des risques,
-              la surveillance SIEM, le développement sécurisé et la gestion de projet.
-            </p>
-            <span>Statut : Terminée</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>CompTIA Security+</h3>
-            <p>
-              Certification en cours de préparation afin de consolider mes connaissances
-              en cybersécurité, gestion des risques, sécurité réseau, sécurité opérationnelle
-              et réponse aux incidents.
-            </p>
-            <span>Statut : En cours</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-      <div class="section-header">
-        <p class="section-tag">Disponibilité</p>
-        <h2>Me contacter</h2>
-        <p>
-          Je suis actuellement ouvert aux opportunités junior en cybersécurité,
-          support TI orienté sécurité, sécurité réseau ou centre opérationnel de sécurité.
-        </p>
-      </div>
-
-      <div class="contact-card">
-        <h3>Claude Kalawa TIZE</h3>
-        <p>Saint-Georges, Québec</p>
-
-        <div class="contact-buttons">
-          <a href="https://www.linkedin.com/in/claude-kalawa-tize-82b081195" target="_blank" class="btn btn-primary">
-            LinkedIn
-          </a>
-
-          <a href="https://github.com/KalawaTize/KalawaTize.github.io" target="_blank" class="btn btn-secondary">
-            GitHub
-          </a>
-
-          <a href="CV-Claude-Kalawa-Tize.pdf" target="_blank" class="btn btn-light">
-            Télécharger mon CV
-          </a>
-        </div>
-
-        <p class="email-note">
-          <a href="mailto:tize.claude.kalawa@gmail.com" class="btn btn-primary">
-				Email
-			</a>
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Claude Kalawa TIZE. Portfolio cybersécurité.</p>
-    <p>Conçu pour présenter mes projets, compétences et objectifs professionnels.</p>
-  </footer>
-
+<body class="bg-dark text-gray-200">
+    <div class="bg-grid min-h-screen">
+
+        <!-- Navigation -->
+        <nav class="sticky top-0 z-50 backdrop-blur-md bg-dark/80 border-b border-gray-800">
+            <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="font-bold text-primary">Claude Kalawa Tize</div>
+                <div class="flex gap-6">
+                    <a href="#competences" class="hover:text-primary transition">Compétences</a>
+                    <a href="#projets" class="hover:text-primary transition">Projets</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Section Accueil -->
+        <section class="max-w-6xl mx-auto px-4 py-20">
+            <div class="flex flex-col gap-4 max-w-3xl">
+                <p class="text-primary">Bonjour, je suis</p>
+                <h1 class="text-5xl md:text-6xl font-bold text-white">Claude Kalawa Tize</h1>
+                <h2 class="text-2xl md:text-3xl font-medium text-gray-300">Technicien et Analyste Cybersécurité Junior</h2>
+                
+                <p class="text-xl text-gray-400 mt-4">📍 Saint-Georges, Québec</p>
+
+                <p class="text-lg mt-6 max-w-2xl">
+                    Je recherche un poste de: <br>
+                    <span class="text-primary font-medium">Analyste SOC Junior | Technicien Cybersécurité | Analyste Sécurité Réseau | Support TI orienté Sécurité</span>
+                </p>
+
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <a href="CV.pdf" class="bg-primary text-darker px-6 py-3 rounded font-bold hover:bg-primary/90 transition flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf"></i> Télécharger mon CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/claude-kalawa" target="_blank" class="bg-gray-800 px-6 py-3 rounded font-bold hover:bg-gray-700 transition flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/KalawaTize" target="_blank" class="bg-gray-800 px-6 py-3 rounded font-bold hover:bg-gray-700 transition flex items-center gap-2">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- A propos -->
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-white mb-8">A propos</h2>
+            <div class="max-w-3xl text-lg text-gray-300 leading-relaxed">
+                <p>Diplômé du Collège Cumberland en cybersécurité, je suis à la recherche de mon premier poste dans le domaine. J'ai une formation très pratique, axée sur les laboratoires et les mises en situation réelle.</p>
+                <p class="mt-4">Je suis capable de mettre en oeuvre, configurer et utiliser la majorité des outils standard du milieu, et j'ai produit pour chacun de mes travaux un rapport détaillé.</p>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- Certifications -->
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-white mb-8">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border border-gray-800 rounded p-6 bg-darker/50 hover:border-primary transition">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-2xl text-primary"></i>
+                        <div>
+                            <h3 class="font-bold text-white">CompTIA Security+</h3>
+                            <p class="text-primary">En cours d'obtention</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- Compétences -->
+        <section id="competences" class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-white mb-10">Compétences et Outils</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="border border-gray-800 rounded p-5 bg-darker/50">
+                    <h3 class="font-bold text-primary mb-3">SOC & Monitoring</h3>
+                    <p>Splunk, Analyse de logs, Détection d'intrusion</p>
+                </div>
+                <div class="border border-gray-800 rounded p-5 bg-darker/50">
+                    <h3 class="font-bold text-primary mb-3">Vulnérabilités</h3>
+                    <p>Nessus, Metasploit, Rapport d'audit</p>
+                </div>
+                <div class="border border-gray-800 rounded p-5 bg-darker/50">
+                    <h3 class="font-bold text-primary mb-3">Test d'intrusion</h3>
+                    <p>Burp Suite, Nmap, Nuclei, Kali Linux, OSINT</p>
+                </div>
+                <div class="border border-gray-800 rounded p-5 bg-darker/50">
+                    <h3 class="font-bold text-primary mb-3">Sécurité Réseau</h3>
+                    <p>pfSense, Snort IPS, Wireshark, Sous-réseaux</p>
+                </div>
+                <div class="border border-gray-800 rounded p-5 bg-darker/50">
+                    <h3 class="font-bold text-primary mb-3">Infrastructure</h3>
+                    <p>Active Directory, GPO, Windows Server, Linux, OpenLDAP</p>
+                </div>
+                <div class="border border-gray-800 rounded p-5 bg-darker/50">
+                    <h3 class="font-bold text-primary mb-3">Autres</h3>
+                    <p>Python, PowerShell, Agile Scrum, Gantt</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- Projets -->
+        <section id="projets" class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-white mb-10">Projets et Laboratoires</h2>
+            <p class="text-gray-400 mb-8">Tous les travaux réalisé au Collège Cumberland. Chaque projet dispose d'un rapport détaillé complet.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="border border-gray-800 rounded-lg bg-darker/50 hover:border-primary transition overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Détection d'attaque avec Splunk</h3>
+                        <p class="text-gray-400 mb-4">Mise en place d'un SIEM Splunk, intégration de logs et simulation et détection d'attaques réelles.</p>
+                        <a href="pdf/splunk.pdf" class="text-primary font-medium flex items-center gap-2 hover:underline">
+                            <i class="fa-solid fa-file-pdf"></i> Voir le rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-lg bg-darker/50 hover:border-primary transition overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Audit de Surface d'Exposition Web</h3>
+                        <p class="text-gray-400 mb-4">Audit de sécurité complet et reconnaissance OSINT avec tout l'arsenal standard de test d'intrusion.</p>
+                        <a href="pdf/audit.pdf" class="text-primary font-medium flex items-center gap-2 hover:underline">
+                            <i class="fa-solid fa-file-pdf"></i> Voir le rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-lg bg-darker/50 hover:border-primary transition overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Scan de vulnérabilités Nessus & Metasploit</h3>
+                        <p class="text-gray-400 mb-4">Mise en place de laboratoire, scan de vulnérabilité, exploitation et rédaction de rapport.</p>
+                        <a href="pdf/nessus.pdf" class="text-primary font-medium flex items-center gap-2 hover:underline">
+                            <i class="fa-solid fa-file-pdf"></i> Voir le rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-lg bg-darker/50 hover:border-primary transition overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">pfSense et Snort IPS</h3>
+                        <p class="text-gray-400 mb-4">Installation et configuration complète de pare-feu pfSense, règles de pare-feu et IPS Snort.</p>
+                        <a href="pdf/pfsense.pdf" class="text-primary font-medium flex items-center gap-2 hover:underline">
+                            <i class="fa-solid fa-file-pdf"></i> Voir le rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-lg bg-darker/50 hover:border-primary transition overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Programme de Gestion de Risque</h3>
+                        <p class="text-gray-400 mb-4">Proposition d'un programme de sécurité complet pour la protection des actifs d'une entreprise.</p>
+                        <a href="pdf/risque.pdf" class="text-primary font-medium flex items-center gap-2 hover:underline">
+                            <i class="fa-solid fa-file-pdf"></i> Voir le rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border border-gray-800 rounded-lg bg-darker/50 hover:border-primary transition overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Active Directory et OpenAM</h3>
+                        <p class="text-gray-400 mb-4">Installation Windows Server 2022, domaine, GPO, OpenLDAP et mise en place de OpenAM.</p>
+                        <a href="pdf/openam.pdf" class="text-primary font-medium flex items-center gap-2 hover:underline">
+                            <i class="fa-solid fa-file-pdf"></i> Voir le rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr class="border-gray-800">
+
+        <!-- Contact -->
+        <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-white mb-8">Contact</h2>
+            <p class="text-gray-400 mb-6">Je suis actuellement disponible pour tout poste dans la région de Saint-Georges ou en télétravail.</p>
+
+            <div class="flex flex-wrap gap-6">
+                <a href="https://www.linkedin.com/in/claude-kalawa" target="_blank" class="flex items-center gap-2 text-primary hover:underline">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/KalawaTize" target="_blank" class="flex items-center gap-2 text-primary hover:underline">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+
+        <footer class="border-t border-gray-800 py-8 text-center text-gray-500">
+            <p>© 2025 Claude Kalawa Tize</p>
+        </footer>
+
+    </div>
 </body>
 </html>
