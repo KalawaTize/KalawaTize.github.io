@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit de sécurité web | Claude Kalawa TIZE</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="project-detail-page">
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="../index.html#accueil" class="logo">
+      <span class="logo-icon">CKT</span>
+      <span>Claude Kalawa TIZE</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#accueil">Accueil</a></li>
+      <li><a href="../index.html#competences">Compétences</a></li>
+      <li><a href="../index.html#projets">Projets</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="project-detail-hero">
+    <div class="project-detail-hero-content">
+      <p class="breadcrumb"><a href="../index.html#projets">Projets</a> / Audit web</p>
+      <p class="tag">Projet 04 - Test de pénétration</p>
+      <h1>Audit de sécurité Web avec outils de reconnaissance et d’analyse</h1>
+      <p>
+        Audit réalisé dans un cadre autorisé afin d’évaluer l’exposition d’une application web,
+        identifier les technologies utilisées et documenter les vulnérabilités potentielles.
+      </p>
+    </div>
+  </section>
+
+  <div class="project-detail-container">
+
+    <article class="project-content">
+
+      <section>
+        <h2>Objectif du projet</h2>
+        <p>
+          Réaliser un audit de sécurité web en appliquant une méthodologie structurée :
+          reconnaissance, énumération, analyse de surface d’attaque, test via proxy et
+          rédaction d’observations de sécurité.
+        </p>
+      </section>
+
+      <section>
+        <h2>Architecture utilisée</h2>
+        <ul>
+          <li>Poste Kali Linux pour les tests.</li>
+          <li>Application ou cible web autorisée.</li>
+          <li>Proxy d’analyse pour observer les requêtes et réponses HTTP.</li>
+          <li>Réseau de laboratoire ou périmètre explicitement autorisé.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Outils utilisés</h2>
+        <ul>
+          <li>Recon-ng</li>
+          <li>theHarvester</li>
+          <li>Shodan</li>
+          <li>Proxychains et Tor</li>
+          <li>Nmap</li>
+          <li>Subfinder et Dirb</li>
+          <li>WhatWeb</li>
+          <li>Burp Suite</li>
+          <li>DevTools</li>
+          <li>Nikto</li>
+          <li>Nuclei</li>
+          <li>Kali Linux</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Étapes réalisées</h2>
+        <ol>
+          <li>Définition du périmètre autorisé.</li>
+          <li>Collecte d’informations publiques sur la cible.</li>
+          <li>Identification des sous-domaines et services exposés.</li>
+          <li>Analyse des technologies web utilisées.</li>
+          <li>Observation du trafic HTTP avec un proxy.</li>
+          <li>Recherche de mauvaises configurations potentielles.</li>
+          <li>Consolidation des résultats dans un rapport synthétique.</li>
+        </ol>
+      </section>
+
+      <section>
+        <div class="warning-box">
+          Les tests de sécurité web doivent toujours être réalisés sur des systèmes autorisés.
+          Les informations sensibles, domaines et adresses IP doivent être anonymisés avant publication.
+        </div>
+      </section>
+
+      <section>
+        <h2>Captures d’écran anonymisées</h2>
+        <div class="screenshot-grid">
+          <figure>
+            <img src="../images/projets/audit-web-recon.png" alt="Résultats de reconnaissance anonymisés">
+            <figcaption>Résultats de reconnaissance avec noms de domaine masqués.</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/projets/audit-web-burp.png" alt="Analyse Burp Suite anonymisée">
+            <figcaption>Analyse HTTP via proxy avec données sensibles supprimées.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Résultats obtenus</h2>
+        <ul>
+          <li>Identification de la surface d’exposition web.</li>
+          <li>Meilleure compréhension des outils d’audit web.</li>
+          <li>Détection de configurations faibles ou points d’attention.</li>
+          <li>Production d’une documentation structurée.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Recommandations</h2>
+        <ul>
+          <li>Réduire l’exposition publique inutile.</li>
+          <li>Maintenir les technologies web à jour.</li>
+          <li>Configurer correctement les en-têtes de sécurité HTTP.</li>
+          <li>Limiter les informations techniques divulguées.</li>
+          <li>Réaliser des audits réguliers dans un cadre autorisé.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Compétences démontrées</h2>
+        <ul>
+          <li>Reconnaissance web.</li>
+          <li>Énumération et cartographie.</li>
+          <li>Utilisation de Burp Suite.</li>
+          <li>Analyse de surface d’attaque.</li>
+          <li>Documentation d’audit.</li>
+        </ul>
+      </section>
+
+      <div class="project-navigation">
+        <a href="pfsense.html" class="btn btn-secondary">Projet précédent</a>
+        <a href="reservation-python.html" class="btn btn-primary">Projet suivant</a>
+      </div>
+
+    </article>
+
+    <aside class="project-sidebar">
+      <h3>Résumé</h3>
+      <p><strong>Domaine :</strong> Test de pénétration web</p>
+      <p><strong>Environnement :</strong> Autorisé / laboratoire</p>
+
+      <div class="badge-list">
+        <span>Kali Linux</span>
+        <span>Nmap</span>
+        <span>Burp Suite</span>
+        <span>Recon-ng</span>
+        <span>Nikto</span>
+        <span>Nuclei</span>
+        <span>Shodan</span>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© 2025 Claude Kalawa TIZE. Portfolio cybersécurité.</p>
+</footer>
+
+</body>
+</html>
